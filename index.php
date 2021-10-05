@@ -159,14 +159,13 @@
 
       $.ajax(settings).done(function(response) {
 
-
         let listaOnibus = '';
 
         $.each(response, function(index, val) {
 
           $.each(val, function(index2, val2) {
 
-            if(val2.velocidade > 0) {
+            if (val2.velocidade > 0) {
               console.log(val2.velocidade)
             }
 
@@ -177,8 +176,6 @@
                 </tr>`;
 
           })
-
-
         })
 
         $('#listagemTabela').html(listaOnibus);
@@ -213,11 +210,11 @@
       .append("g")
       .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
-    
-        
+
+
     // pegue os dados
     d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv", function(data) {
-      
+
       //Eixo X: dimensionar e desenhar:
       var x = d3.scaleLinear()
         .domain([0, 1000]) // pode usar isso em vez de 1000 para ter o máximo de dados: d3.max(data, function(d) { return +d.price })
