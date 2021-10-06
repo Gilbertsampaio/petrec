@@ -1,6 +1,6 @@
 <p align="center"><a target="_new" href="https://www.gmeloweb.com.br"><img src="https://www.gmeloweb.com.br/images/logo-proposta.png" width="400"></a></p>
 
-# Frontend Challenge
+# Frontend
 
 ## Link para acessar o Dashboard de consultas de ônibus online
 
