@@ -16,9 +16,9 @@
 
 ## Ferramentas Utilizadas
 
-- Boostrap;
-- Plugins JS D3 (gráfico);
-- Plugins JS Openlayers (geolocalização);
+- Boostrap 5;
+- Plugins JS D3 v4 (gráfico);
+- Plugins JS Openlayers v2.11 (geolocalização);
 - Plugins JS Datatables (paginação e filtros de tabela);
 - Pligins materialdesignicons.css,
 - Informações consumidas pelo arquivo dados-brt.json.
