@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Projeto Frontend">
   <meta name="author" content="Gilbert Sampaio">
-  <title>Dashboard</title>
+  <title>Dashboard - PETREC</title>
   <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
-  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
-  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+  <link rel="icon" href="https://petrec.com.br/pt/wp-content/uploads/2020/05/cropped-Vector-Smart-Object-1-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://petrec.com.br/pt/wp-content/uploads/2020/05/cropped-Vector-Smart-Object-1-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://petrec.com.br/pt/wp-content/uploads/2020/05/cropped-Vector-Smart-Object-1-180x180.png" />
+  <meta name="msapplication-TileImage" content="https://petrec.com.br/pt/wp-content/uploads/2020/05/cropped-Vector-Smart-Object-1-270x270.png" />
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
