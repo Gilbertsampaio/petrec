@@ -7,7 +7,7 @@ function setDataTable(tableId) {
     $('#' + tableId + ' thead tr')
         .clone(true)
         .addClass('filters')
-        .appendTo('#' + tableId + ' thead');
+        .appendTo('#' + tableId + '  thead');
 
     $('#' + tableId).DataTable({
         order: [1, 'esc'],
@@ -33,7 +33,7 @@ function setDataTable(tableId) {
             [10, 25, 50, 100, "TODOS"]
         ],
         destroy: false,
-        searching: false,
+        searching: true,
         retrieve: true,
         paging: true,
         orderCellsTop: true,
@@ -64,8 +64,6 @@ function setDataTable(tableId) {
         },
 
     });
-
-    $('select[name="tabelaOnibus_length"]').addClass('form-select');
 }
 
 function carregarListagem() {
@@ -101,7 +99,7 @@ function carregarListagem() {
                 listaOnibus += `<tr>
                                   <td>${val2.codigo}</td>
                                   <td>${val2.linha}</td>
-                                  <td>${val2.trajeto == '' ? 'Indisponível' : val2.trajeto}</td>
+                                  <td>${val2.trajeto == '' ? '<b style="color:#ccc">Indisponível</b>' : val2.trajeto}</td>
                                 </tr>`;
 
             })

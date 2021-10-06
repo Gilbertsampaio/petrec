@@ -174,6 +174,22 @@
       box-shadow: none;
     }
 
+    #tabelaOnibus_filter {
+      display: none;
+    }
+
+    /*#tabelaOnibus_info {
+      position: absolute;
+      bottom: 60px;
+      left: 40px;
+    }
+
+    #tabelaOnibus_paginate {
+      position: absolute;
+      bottom: 60px;
+      right: 40px;
+    }*/
+
     .paginate_button {
       padding: 8px 12px !important;
       background: #1d474e !important;
@@ -304,6 +320,8 @@
 
     .table-responsive {
       margin-bottom: 50px;
+      overflow-y: hidden;
+      min-height: 240px;
     }
 
     .svg-container {
