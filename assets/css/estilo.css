@@ -269,7 +269,7 @@ div.dataTables_wrapper div.dataTables_paginate {
     width: 100%;
     min-height: 300px;
     height: 300px;
-    margin-bottom: 50px !important;
+    margin-bottom: 20px !important;
 }
 
 #mapdiv.show {
@@ -382,7 +382,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 }
 
 .table-responsive {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     overflow-y: hidden;
     /*min-height: 240px;*/
     border-radius: 7px 7px 0 0;
