@@ -60,7 +60,7 @@
                 Mapa
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item sairDesktop">
               <a class="nav-link" href="#">
                 <i class="mdi mdi-logout-variant"></i>
                 Sair
@@ -73,7 +73,9 @@
         <div id="graficoDIV" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Gráfico</h1>
         </div>
+        <!--DIV PARA EXIBIÇÃO DO GRÁFICO-->
         <div id="grafico">
+          <!--DIV SPINNER QUE SOME AO CARREGAR O GRÁFICO-->
           <div class="spinner-border" role="status">
             <span class="visually-hidden"></span>
           </div>
@@ -90,11 +92,13 @@
                 <th style="border-top-right-radius: 5px;" scope="col">Trajeto</th>
               </tr>
             </thead>
+            <!--TBODY PARA LISTAGEM DA TABELA-->
             <tbody id="listagemTabela">
               <tr class="center">
                 <td class="d-none"></td>
                 <td class="d-none"></td>
                 <td colspan="3" style="line-height: 50px !important;">
+                  <!--DIV SPINNER QUE SOME AO CARREGAR A TABELA-->
                   <div class="spinner-border" role="status">
                     <span class="visually-hidden"></span>
                   </div> Aguarde o carregamento das informações
@@ -106,7 +110,9 @@
         <div id="mapdivDIV" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h2>Mapa de localização</h2>
         </div>
+        <!--DIV PARA EXIBIÇÃO DO MAPA-->
         <div id="mapdiv">
+          <!--DIV SPINNER QUE SOME AO CARREGAR O MAPA-->
           <div class="spinner-border" role="status">
             <span class="visually-hidden"></span>
           </div>

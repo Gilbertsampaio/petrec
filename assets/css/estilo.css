@@ -280,6 +280,10 @@ div.dataTables_wrapper div.dataTables_paginate {
     display: block;
 }
 
+.sairDesktop {
+    display: none;
+}
+
 @media (max-width: 991.98px) and (orientation: landscape) {
     .navbar .navbar-toggler {
         top: 1.25rem !important;
@@ -297,6 +301,9 @@ div.dataTables_wrapper div.dataTables_paginate {
     }
     .sair {
         display: none;
+    }
+    .sairDesktop {
+        display: block;
     }
     .sidebar {
         top: 1rem !important;
@@ -352,6 +359,9 @@ div.dataTables_wrapper div.dataTables_paginate {
     }
     .sair {
         display: none;
+    }
+    .sairDesktop {
+        display: block;
     }
     .paginate_button {
         padding: 12px 15px !important;
