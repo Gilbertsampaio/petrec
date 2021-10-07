@@ -127,7 +127,7 @@ function carregarListagem() {
 
         var bins = histogram(data);
 
-        var svg = d3.select("#grafico").append("div").classed("svg-container", true).append("svg").attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 600 400").classed("svg-content-responsive", true).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        var svg = d3.select("#grafico").html("").classed("svg-container", true).append("svg").attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 600 400").classed("svg-content-responsive", true).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         d3.select("div#chartId").append("div").classed("svg-container", true).append("svg").attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 600 400").classed("svg-content-responsive", true);
 
@@ -195,6 +195,7 @@ function carregarListagem() {
                 }
             );
             vectorLayer.addFeatures(feature);
+            $('#mapdiv').addClass('show');
         }
 
         map.addLayer(vectorLayer);

@@ -24,6 +24,51 @@
     margin-bottom: 20px;
 }
 
+.center {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+#grafico,
+#mapdiv {
+    min-height: 300px;
+    position: relative;
+}
+
+#grafico>.spinner-border,
+#mapdiv>.spinner-border {
+    display: inline-block;
+    width: 75px !important;
+    height: 75px !important;
+    vertical-align: -10px;
+    border: .25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+    position: absolute;
+    color: #0c5a6c;
+    top: 100px;
+    left: 45%;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -10px;
+    border: .25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+    margin-right: 10px;
+    color: #0c5a6c;
+}
+
 table {
     padding-top: 0px !important;
     border: 1px solid #c6ddeb;
@@ -31,13 +76,14 @@ table {
 }
 
 table.dataTable.no-footer {
-    border-bottom: 1px solid rgb(12 90 108) !important;
+    border-bottom: 1px solid #0c5a6c !important;
 }
 
 table th {
     background: #c6ddeb;
     border-bottom: none !important;
     color: #0c5a6c;
+    padding: 10px;
 }
 
 .filters th {
@@ -77,16 +123,16 @@ input {
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    color: #ffffff !important;
+    color: #0c5a6c !important;
     border: none !important;
-    background: #32857d !important;
+    background: #c6ddeb !important;
     transition: all .3s ease !important;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    color: #ffffff !important;
+    color: #0c5a6c !important;
     border: none !important;
-    background: #32857d !important;
+    background: #c6ddeb !important;
     transition: all .3s ease !important;
 }
 
@@ -110,14 +156,14 @@ input {
 
 .ellipsis {
     display: inline-block;
-    padding: 0 12px;
-    height: 35px !important;
+    padding: 0 12px !important;
+    height: 43px !important;
     vertical-align: middle;
-    line-height: 28px;
-    margin-top: -4px;
+    line-height: 33px;
+    margin-top: -3px;
     cursor: default;
-    background: #1d474e;
-    color: #32857d;
+    background: #0c5a6c;
+    color: #c6ddeb;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
@@ -133,14 +179,14 @@ input {
     text-align: center;
     text-decoration: none !important;
     cursor: pointer;
-    color: #32857d !important;
+    color: #c6ddeb !important;
     border-radius: 2px;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
 .ellipsis:hover {
-    color: #fff !important;
-    background: #32857d !important;
+    color: #0c5a6c !important;
+    background: #c6ddeb !important;
     transition: all .3s ease !important;
 }
 
@@ -171,19 +217,19 @@ input {
     }*/
 
 .paginate_button {
-    padding: 8px 12px !important;
-    background: #1d474e !important;
+    padding: 12px 17px !important;
+    background: #0c5a6c !important;
     text-decoration: none !important;
     cursor: pointer !important;
     font-weight: bold !important;
-    color: #32857d !important;
+    color: #c6ddeb !important;
     border: none !important;
     margin-left: 0px !important;
     border-radius: 0 !important;
 }
 
 div.dataTables_wrapper div.dataTables_paginate {
-    margin: 10 0 0 0;
+    margin: 10 0 10px 0;
     white-space: nowrap;
     text-align: right;
 }
@@ -221,8 +267,13 @@ div.dataTables_wrapper div.dataTables_paginate {
 
 #mapdiv {
     width: 100%;
-    height: 500px;
+    min-height: 300px;
+    height: 300px;
     margin-bottom: 50px !important;
+}
+
+#mapdiv.show {
+    height: 500px;
 }
 
 .sair {
@@ -250,6 +301,23 @@ div.dataTables_wrapper div.dataTables_paginate {
     .sidebar {
         top: 1rem !important;
         z-index: 1005 !important;
+    }
+    .paginate_button {
+        padding: 17px 22px !important;
+        background: #0c5a6c !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
+        font-weight: bold !important;
+        color: #c6ddeb !important;
+        border: none !important;
+        margin-left: 0px !important;
+        border-radius: 0 !important;
+    }
+    .ellipsis {
+        height: 52px !important;
+        line-height: 43px;
+        margin-top: -2px;
+        padding: 0 18px !important;
     }
 }
 
@@ -285,12 +353,39 @@ div.dataTables_wrapper div.dataTables_paginate {
     .sair {
         display: none;
     }
+    .paginate_button {
+        padding: 12px 15px !important;
+        background: #0c5a6c !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
+        font-weight: bold !important;
+        color: #c6ddeb !important;
+        border: none !important;
+        margin-left: 0px !important;
+        border-radius: 0 !important;
+    }
+    .ellipsis {
+        height: 42px !important;
+        line-height: 36px;
+        margin-top: -2px;
+    }
+    #mapdiv {
+        min-height: 300px;
+        position: relative;
+    }
+    #grafico>.spinner-border,
+    #mapdiv>.spinner-border {
+        position: absolute;
+        top: 100px;
+        left: 40%;
+    }
 }
 
 .table-responsive {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     overflow-y: hidden;
-    min-height: 240px;
+    /*min-height: 240px;*/
+    border-radius: 7px 7px 0 0;
 }
 
 .svg-container {
@@ -308,4 +403,10 @@ div.dataTables_wrapper div.dataTables_paginate {
     position: absolute;
     top: 10px;
     left: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 0;
 }

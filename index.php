@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +19,7 @@
   <link href="assets/css/estilo.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.0/examples/dashboard/dashboard.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" target="_new" href="https://petrec.com.br/pt/"><img src="assets/images/logo.png" class="logo" /></a>
@@ -71,12 +73,16 @@
         <div id="graficoDIV" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Gráfico</h1>
         </div>
-        <div id="grafico"></div>
+        <div id="grafico">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
         <div id="tabelaOnibusDIV" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h2>Tabela de Ônibus</h2>
         </div>
         <div class="table-responsive">
-          <table id="tabelaOnibus" class="display" style="width:100%">
+          <table id="tabelaOnibus" class="display" style="width:100%;margin-bottom:20px">
             <thead>
               <tr>
                 <th style="border-top-left-radius: 5px;" scope="col">Código</th>
@@ -84,13 +90,27 @@
                 <th style="border-top-right-radius: 5px;" scope="col">Trajeto</th>
               </tr>
             </thead>
-            <tbody id="listagemTabela"></tbody>
+            <tbody id="listagemTabela">
+              <tr class="center">
+                <td class="d-none"></td>
+                <td class="d-none"></td>
+                <td colspan="3" style="line-height: 50px !important;">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden"></span>
+                  </div> Aguarde o carregamento das informações
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div id="mapdivDIV" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h2>Mapa de localização</h2>
         </div>
-        <div id="mapdiv"></div>
+        <div id="mapdiv">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
       </main>
     </div>
   </div>
@@ -98,4 +118,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/lib/OpenLayers.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
